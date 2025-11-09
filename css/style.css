@@ -1,0 +1,260 @@
+/* ----------------------------------
+   GLOBAL STYLES 
+-----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9fafa;
+    color: #222;
+}
+
+/* ----------------------------------
+   HEADER 
+-----------------------------------*/
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0e5d4f;
+}
+.logo span {
+    color: #1d8c78;
+}
+
+/* NAVIGATION */
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    font-size: 17px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* underline hover */
+.nav-menu a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #1d8c78;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+.nav-menu a:hover::after {
+    width: 100%;
+}
+.nav-menu a:hover {
+    color: #1d8c78;
+}
+
+/* LOGIN BUTTON */
+.login-pill {
+    padding: 8px 22px;
+    background: #1d8c78;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.login-pill:hover {
+    background: #157565;
+}
+
+/* ----------------------------------
+   HERO SECTION (Home Page)
+-----------------------------------*/
+.hero {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0b4f44;
+    line-height: 1.3;
+}
+.hero-text p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+    padding: 14px 28px;
+    background: #0b4f44;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.cta-btn:hover {
+    background: #157565;
+}
+
+.hero-img img {
+    width: 420px;
+    filter: drop-shadow(0 8px 25px rgba(0,0,0,0.15));
+}
+
+/* ----------------------------------
+   PAGE TITLES
+-----------------------------------*/
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    color: #0b4f44;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ----------------------------------
+   SERVICES PAGE GRID
+-----------------------------------*/
+.services-grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    font-size: 18px;
+    text-align: center;
+    color: #0e5d4f;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+/* ----------------------------------
+   FORMS (Appointment, Contact, Login, Signup)
+-----------------------------------*/
+.form-section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.main-form {
+    width: 400px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.main-form input,
+.main-form select,
+.main-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.main-form input:focus,
+.main-form select:focus,
+.main-form textarea:focus {
+    border-color: #1d8c78;
+}
+
+/* FORM LINK */
+.form-link {
+    text-align: center;
+    font-size: 14px;
+}
+.form-link a {
+    color: #1d8c78;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ----------------------------------
+   RESPONSIVE
+-----------------------------------*/
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-form {
+        width: 90%;
+    }
+
+    .nav-menu {
+        display: none; /* If you want mobile menu, tell me */
+    }
+}
