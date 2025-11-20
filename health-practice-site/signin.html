@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign in | CarePractice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="navbar__brand">
+          <div class="navbar__logo">H</div>
+          <div>
+            <div class="navbar__brand-text">Healify</div>
+            <div class="navbar__brand-sub">Practice management platform</div>
+          </div>
+        </a>
+
+        <div class="navbar__links">
+          <a href="about.html" class="navbar__link">About</a>
+          <a href="features.html" class="navbar__link">Features</a>
+          <a href="pricing.html" class="navbar__link">Pricing</a>
+          <a href="specialties.html" class="navbar__link">Specialties</a>
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </div>
+
+        <div class="navbar__cta">
+          <a href="signin.html" class="btn btn--ghost active">Sign in</a>
+          <a href="signup.html" class="btn btn--primary">Start free trial</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title">Welcome back</h1>
+      <p class="page-hero__subtitle">Sign in to access your practice dashboard.</p>
+    </div>
+  </section>
+
+  <!-- Sign-In Section -->
+  <section class="section">
+    <div class="container" style="max-width: 480px;">
+      <div class="form-card">
+        <h2 style="margin-top:0; font-size:1.4rem; margin-bottom:1rem;">Sign in</h2>
+
+        <!-- Email Login -->
+        <form>
+          <div class="form-group">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-input" required />
+          </div>
+
+          <div style="text-align:right; margin-bottom:1rem;">
+            <a href="#" style="font-size:0.85rem; color:var(--primary); text-decoration:none;">Forgot password?</a>
+          </div>
+
+          <button class="btn btn--primary" style="width:100%; margin-bottom:1rem;">
+            Sign in
+          </button>
+        </form>
+
+        <div style="text-align:center; margin:1.5rem 0; color:#94a3b8;">OR</div>
+
+        <!-- Social Login -->
+        <button class="btn btn--ghost" style="width:100%; margin-bottom:0.6rem;">
+          <img src="assets/icons/google.svg" style="height:16px" /> Continue with Google
+        </button>
+
+        <button class="btn btn--ghost" style="width:100%">
+          <img src="assets/icons/apple.svg" style="height:16px" /> Continue with Apple
+        </button>
+
+        <div style="text-align:center; margin-top:1.2rem; font-size:0.9rem;">
+          Don't have an account? 
+          <a href="signup.html" style="color:var(--primary); font-weight:600;">Start free trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Features Section -->
+  <section class="section section--alt">
+    <div class="container columns-3">
+      <article class="card">
+        <h3 class="card__title">Secure by design</h3>
+        <p class="card__text">Enterprise-level encryption keeps your client data protected at all times.</p>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Trusted by professionals</h3>
+        <p class="card__text">Over 225,000 clinicians use CarePractice to manage their work.</p>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">24/7 human support</h3>
+        <p class="card__text">Our support team is here for you whenever you need help.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <div>© 2025 CarePractice, Inc.</div>
+      <div class="footer__legal-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
