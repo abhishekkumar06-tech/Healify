@@ -1,6 +1,5 @@
-/* ===========================
-   BASIC GLOBAL STYLES
-=========================== */
+
+   /* BASIC GLOBAL STYLES */
 
 *,
 *::before,
@@ -20,9 +19,9 @@ body {
   line-height: 1.5;
 }
 
-/* ===========================
-   LAYOUT HELPERS
-=========================== */
+
+   /* LAYOUT HELPERS */
+
 
 .container {
   width: 100%;
@@ -60,9 +59,9 @@ body {
   max-width: 540px;
 }
 
-/* ===========================
-   HEADER / NAVIGATION
-=========================== */
+
+   /* HEADER / NAVIGATION */
+
 
 .header {
   position: sticky;
@@ -160,9 +159,9 @@ body {
   background: #e2e8f0;
 }
 
-/* ===========================
-   HERO SECTION
-=========================== */
+
+   /* HERO SECTION */
+
 
 .hero {
   padding: 60px 0;
@@ -255,9 +254,9 @@ body {
   background: #f8fafc;
 }
 
-/* ===========================
-   TRUST SECTION
-=========================== */
+
+   /* TRUST SECTION */
+
 
 .trust-bar {
   display: flex;
@@ -280,9 +279,9 @@ body {
   font-size: 13px;
 }
 
-/* ===========================
-   SPECIALTIES
-=========================== */
+
+   /* SPECIALTIES */
+
 
 .grid-two {
   display: grid;
@@ -312,9 +311,9 @@ body {
   color: white;
 }
 
-/* ===========================
-   FEATURES
-=========================== */
+
+   /* FEATURES */
+
 
 .chip-row {
   display: flex;
@@ -330,9 +329,9 @@ body {
   font-size: 13px;
 }
 
-/* ===========================
-   CARDS (3 COLUMNS)
-=========================== */
+
+   /* CARDS (3 COLUMNS) */
+
 
 .columns-3 {
   display: grid;
@@ -352,9 +351,9 @@ body {
   font-weight: bold;
 }
 
-/* ===========================
-   STEPS
-=========================== */
+
+   /* STEPS */
+
 
 .steps {
   display: grid;
@@ -369,9 +368,9 @@ body {
   border-radius: 15px;
 }
 
-/* ===========================
-   CTA STRIP
-=========================== */
+
+   /* CTA STRIP */
+
 
 .cta-strip {
   margin-top: 30px;
@@ -384,9 +383,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+
+   /* FOOTER */
+
 
 .footer {
   margin-top: 50px;
@@ -431,9 +430,9 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+
+   /* RESPONSIVE */
+
 
 @media (max-width: 960px) {
   .hero__grid,
