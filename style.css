@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Inter&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Courgette', cursive;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2 10 10/57%),rgba(2 10 10/20%)),url(img/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar img{
+    width: 80px;
+}
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: #2e6476;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.burger{
+    display: none;
+}
+/* ___________main */
+.main{
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-box{
+    color: #fff;
+    width: 40%;
+}
+.text-box h1{
+    padding: 2px;
+    font-size: 60px;
+}
+.text-box p{
+    padding: 1% 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #2e6476;
+    height: 55%;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
