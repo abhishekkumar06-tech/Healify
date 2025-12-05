@@ -1,188 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healify</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
-    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Healify — Home</title>
+
+  <!-- fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9a6b6f3.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="background">
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-                <img src="img/logo.png" alt="">
-                <h1><span>H</span>ealify</h1>
-            </a>
-            <div class="navbar-items h-class">
-                <ul class="nav v-class">
-                    <li> <a href="#">HOME</a></li>
-                    <li> <a href="#">ABOUT</a></li>
-                    <li> <a href="#">CONTACT</a></li>
-                    <li> <a href="#">COURSE</a></li>
-                    <li> <a href="#">BLOG</a></li>
-                </ul>
-            </div>
-            <div class="burger">&#9776</div>
-        </nav>
-        <!-- main section -->
-         <div class="main">
-            <div class="text-box">
-                <h1>your health is our first priority</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quasi dignissimos ab molestiae porro possimus consequatur atque id harum 
-                    laudantium in eveniet aliquid et eos, quam vel provident odit ea.</p>
-                <a href="" class="btn btn1">Visit to know more</a>
-            </div>
-            <div class="box">
-                <h1>Appointment</h1>
-                <input type="text" name="name" placeholder="name">
-                <input type="text" name="f_name" placeholder="father name">
-                <input type="text" name="email" placeholder="email">
-                <input type="text" name="number" placeholder="number">
-                <a href="" class="btn bnt2">Book appointment</a>
-            </div>
-         </div>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.png" alt="Healify logo">
+        <h1><span>H</span>ealify</h1>
+      </a>
+
+      <nav class="nav-items">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <a class="cta" href="contact.html">Book</a>
+        <div class="burger">&#9776;</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="container hero">
+      <div class="hero-card fade-in">
+        <span class="kicker">Trusted Care</span>
+        <h1>Your health is our priority — care that cares back</h1>
+        <p>Healify is a modern clinic connecting patients to expert doctors, diagnostics, and personalized plans. We blend human care with technology.</p>
+
+        <div class="cta-row">
+          <a class="btn" href="contact.html">Book Appointment</a>
+          <a class="btn outline" href="about.html">Learn About Us</a>
+        </div>
+
+        <div style="margin-top:22px; display:flex; gap:12px; align-items:center; color:var(--muted)">
+          <div style="display:flex; gap:10px; align-items:center">
+            <i class="fas fa-phone-alt" style="color:var(--accent)"></i>
+            <div><small style="color:var(--muted)">Call us</small><br><strong style="color:var(--white)">+92 300 1234567</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="appointment fade-in" style="align-self:start;">
+        <h3>Book Appointment</h3>
+        <input placeholder="Full name" />
+        <input placeholder="Email" />
+        <input placeholder="Phone" />
+        <select>
+          <option>Choose department</option>
+          <option>General</option>
+          <option>Radiology</option>
+          <option>Pharmacy</option>
+        </select>
+        <button class="book">Request Booking</button>
+      </aside>
     </section>
-    <!-- services -->
-     <section class="services">
-        <h1 class="heading">Our services</h1>
-        <div class="row">
 
-            <div class="box1">
-                <i class="fas fa-tooth"></i>
-                <h2>dentistry</h2>
-                <p>Lorem ipsum dolor sit amet cosectetur adipiscing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-user-nurse"></i>
-                <h2>nursing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-tablets"></i>
-                <h2>medicine</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+    <!-- Services -->
+    <section class="section">
+      <div class="container">
+        <h2 class="heading">Our Services</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-tooth"></i>
+            <h3>Dentistry</h3>
+            <p>Complete dental care — preventive, restorative, cosmetic.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-user-nurse"></i>
+            <h3>Nursing Care</h3>
+            <p>24/7 trained nursing staff and home care support.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-tablets"></i>
+            <h3>Medicine & Pharmacy</h3>
+            <p>On-site pharmacy with trusted medications and counseling.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="row">
+    <!-- About preview -->
+    <section class="section" style="padding-top:20px;">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="img/pic2.jpg" alt="clinic">
+        </div>
+        <div class="about-text">
+          <h2>Inspiring hope — innovating health</h2>
+          <p style="color:var(--muted)">We focus on patient outcomes, evidence-based treatments and a caring environment. Our team is trained to deliver efficient, safe, and empathetic care.</p>
+          <div style="margin-top:18px">
+            <a class="btn" href="about.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="box1">
-                <i class="fas fa-prescription-bottle"></i>
-                <h2>pharmacy</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-x-ray"></i>
-                <h2>audiology</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box1">
-                <i class="fas fa-eye"></i>
-                <h2>optometry</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+    <!-- Departments -->
+    <section class="section">
+      <div class="container">
+        <h2 class="heading">Departments</h2>
+        <div class="tiles">
+          <div class="tile"><strong>Pathology</strong></div>
+          <div class="tile"><strong>Pharmacology</strong></div>
+          <div class="tile"><strong>Radiology</strong></div>
+          <div class="tile"><strong>Anatomy</strong></div>
         </div>
-     </section>
-     <!-- quality -->
-      <section class="quality">
-        <h1 class="heading">Why choose our healthcare clinic</h1>
-        <div class="row">
-            <div class="box2">
-                <i class="fas fa-user-plus"></i>
-                <h2>24/7 available</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box2">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h2>medical cycle care</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="box2">
-                <i class="fas fa-award"></i>
-                <h2>quality control</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-      </section>
-      <!-- about  -->
-       <section class="about">
-        <h1 class="heading">about us</h1>
-        <div class="row row1">
-            <div class="left">
-                <img src="img/pic2.jpg" alt="">
-            </div>
-            <div class="right">
-                <h1>inspiring hope, <br>innovating health</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Animi explicabo quaerat impedit voluptate magnam culpa vitae. Asperiores nihil quasi
-                     culpa placeat commodi odit, quod, laboriosam dolor nesciunt totam vero! Natus.
-                Ab repellendus earum atque, aliquam sequi voluptatum neque fugit quisquam consequuntur 
-                cupiditate, esse facilis magni iusto consequatur error officia doloremque, praesentium molestiae 
-                unde vero! Praesentium nobis nisi quia asperiores illum.</p>
-                <button class="btn btn3">explore more</button>
-            </div>
-        </div>
-       </section>
-       <!-- department -->
-        <section class="department">
-            <h1 class="heading">Our department</h1>
-            <div class="box3">
-                <h1>pathology</h1>
-            </div>
-            <div class="box3">
-                <h1>pharmocology</h1>
-             </div>
-             <div class="box3">
-                <h1>radiology</h1>
-             </div>
-             <div class="box3">
-                <h1>anatomy</h1>
-             </div>
-        </section>
-        <!-- footer -->
-        <footer>
-            <div class="footer-sec">
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>contact</h2>
-                        <p>email</p>
-                        <p>youtube</p>
-                        <p>facebook</p>
-                        <p>twitter</p>
-                    </div>
-                    <div class="f_box">
-                        <h2>departments</h2>
-                        <p>radiology</p>
-                        <p>pharmocology</p>
-                        <p>pathology</p>
-                        <p>anatomy</p>
-                    </div>
-                </div>
+      </div>
+    </section>
 
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>address</h2>
-                        <p>near garden town lahore,<br> block 4</p>
-                        <p>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-snapchat"></i>
-                            <i class="fab fa-whatsapp"></i>
-                        </p>
-                    </div>
-                    <div class="f_box">
-                        <h2>other facilities</h2>
-                        <p>24/7 services</p>
-                        <p>quality control</p>
-                        <p>full cycle medical care</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="index.js"></script>
+    <!-- Blog preview -->
+    <section class="section">
+      <div class="container">
+        <h2 class="heading">From Our Blog</h2>
+        <div class="blog-grid">
+          <div class="post">
+            <img src="img/blog1.jpg" alt="blog">
+            <h4>How to Maintain a Healthy Lifestyle</h4>
+            <p style="color:var(--muted)">Practical tips to keep your body and mind in top shape.</p>
+          </div>
+          <div class="post">
+            <img src="img/blog2.jpg" alt="blog">
+            <h4>Importance of Regular Checkups</h4>
+            <p style="color:var(--muted)">Early detection saves lives — schedule routine screenings.</p>
+          </div>
+          <div class="post">
+            <img src="img/blog3.jpg" alt="blog">
+            <h4>Mental Health Awareness</h4>
+            <p style="color:var(--muted)">Strategies for managing stress and improving well-being.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h4>Contact</h4>
+          <p>healify@gmail.com</p>
+          <p>+92 300 1234567</p>
+        </div>
+        <div>
+          <h4>Departments</h4>
+          <p>Radiology • Pharmacology • Pathology • Anatomy</p>
+        </div>
+        <div>
+          <h4>Address</h4>
+          <p>Near Garden Town, Lahore</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
