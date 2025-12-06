@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* DARK MODE */
+body.dark-mode{
+    background:#1f1f1f;
+    color:#eaeaea;
+}
+
+/* GLOBAL BUTTONS */
+.theme-toggle{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:999;
+    cursor:pointer;
+    background:#0a4faf;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+}
+#scrollTopBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#0a4faf;
+    color:white;
+    padding:12px 14px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
+
+/* HEADER */
+.sub-header{
+    height:30vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),
+               url("../images/pic1.jpg");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+.home-navbar{
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo-area img{
+    width:55px;
+}
+.logo-area h1{
+    color:white;
+}
+.logo-area h1 span{
+    color:#0a92ff;
+}
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+.nav-links a{
+    color:white;
+}
+.nav-links .active{
+    border-bottom:2px solid #0a92ff;
+}
+.page-title{
+    font-size:35px;
+    margin-top:40px;
+}
+
+/* QUICK HELP */
+.contact-help{
+    padding:40px 8%;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+.help-box{
+    width:32%;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.1);
+}
+.help-box i{
+    font-size:32px;
+    color:#0a4faf;
+    margin-bottom:10px;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    padding:40px 8%;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+.contact-left, .contact-right{
+    width:48%;
+}
+.contact-left h2, .contact-right h2{
+    color:#0a4faf;
+    margin-bottom:15px;
+}
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border:1px solid #ddd;
+}
+.primary-btn{
+    background:#0a4faf;
+    color:white;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.map{
+    width:100%;
+    height:250px;
+    border-radius:10px;
+}
+.contact-details{
+    margin-top:20px;
+}
+
+/* FOOTER */
+.home-footer{
+    background:#0a4faf;
+    padding:40px 8%;
+    color:white;
+}
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healify | Appointment</title>
+
+    <link rel="stylesheet" href="../styles/appointment.css" />
+</head>
+<body>
+
+<div class="theme-toggle" id="themeToggle">🌙</div>
+<button id="scrollTopBtn">↑</button>
+
+<header class="sub-header">
+    <nav class="home-navbar">
+        <div class="logo-area">
+            <img src="../images/logo.png" />
+            <h1><span>H</span>ealify</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="appointment.html" class="active">Appointment</a></li>
+        </ul>
+
+        <div class="burger">☰</div>
+    </nav>
+
+    <h2 class="page-title fade-in">Book Your Appointment</h2>
+</header>
+
+<section class="appointment-section fade-up">
+
+    <form class="appoint-box" id="appointForm">
+
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Age" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Phone Number" />
+        <select>
+            <option>Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+        </select>
+
+        <button id="bookNow">Book Now</button>
+
+    </form>
+
+</section>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

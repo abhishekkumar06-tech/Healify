@@ -4,103 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healify | Courses</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/course.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <section class="background">
-    <nav class="navbar">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-        <h1><span>H</span>ealify</h1>
+<!-- THEME + SCROLL BUTTONS -->
+<div class="theme-toggle" id="themeToggle">🌙</div>
+<button id="scrollTopBtn">↑</button>
 
-        <div class="navbar-items h-class">
-            <ul class="nav v-class">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="course.html">COURSE</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
+<!-- NAVBAR -->
+<header class="sub-header">
+    <nav class="home-navbar">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="">
+            <h1><span>H</span>ealify</h1>
         </div>
 
-        <div class="burger">&#9776</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="course.html" class="active">Courses</a></li>
+        </ul>
+
+        <div class="burger" id="burger">☰</div>
     </nav>
+
+    <h2 class="page-title fade-in">Our Courses</h2>
+</header>
+
+<!-- CATEGORY FILTER -->
+<section class="course-filter fade-up">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="medical">Medical</button>
+    <button class="filter-btn" data-category="radiology">Radiology</button>
+    <button class="filter-btn" data-category="pharmacy">Pharmacy</button>
 </section>
 
+<!-- COURSE GRID -->
+<section class="course-section fade-up">
 
-    <!-- COURSE SECTION -->
-    <section class="services">
-        <h1 class="heading">Our Courses</h1>
+    <div class="course-card" data-category="medical">
+        <img src="images/pic2.jpg" alt="">
+        <h3>MBBS Foundation</h3>
+        <p>Basics of anatomy, physiology & pathology.</p>
+        <button class="primary-btn">Learn More</button>
+    </div>
 
-        <div class="row">
-            <div class="course-box">
-                <h2>MBBS Foundation</h2>
-                <p>Introduction to medical sciences including anatomy, physiology, pathology.</p>
-            </div>
-            <div class="course-box">
-                <h2>Radiology Training</h2>
-                <p>Learn X-rays, ultrasound, CT scan, MRI with professional equipment.</p>
-            </div>
-            <div class="course-box">
-                <h2>Pharmacy Course</h2>
-                <p>Drug formulation, dispensing and safe medication practices.</p>
-            </div>
+    <div class="course-card" data-category="radiology">
+        <img src="images/about.jpg" alt="">
+        <h3>Radiology Training</h3>
+        <p>Learn X-ray, CT, MRI with real clinical training.</p>
+        <button class="primary-btn">Learn More</button>
+    </div>
+
+    <div class="course-card" data-category="pharmacy">
+        <img src="images/pic1.jpg" alt="">
+        <h3>Pharmacy Essentials</h3>
+        <p>Drug formulation, dosage & safety protocols.</p>
+        <button class="primary-btn">Learn More</button>
+    </div>
+
+    <div class="course-card" data-category="medical">
+        <img src="images/about.jpg" alt="">
+        <h3>Nursing Assistant Program</h3>
+        <p>Basic patient care, vitals & support skills.</p>
+        <button class="primary-btn">Learn More</button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="home-footer fade-in">
+    <div class="footer-content">
+        <div>
+            <h3>Healify Hospital</h3>
+            <p>Your trusted healthcare partner.</p>
         </div>
-    </section>
 
-    <footer>
-            <div class="footer-sec">
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>contact</h2>
-                        <p>email</p>
-                        <p>youtube</p>
-                        <p>facebook</p>
-                        <p>twitter</p>
-                    </div>
-                    <div class="f_box">
-                        <h2>departments</h2>
-                        <p>radiology</p>
-                        <p>pharmocology</p>
-                        <p>pathology</p>
-                        <p>anatomy</p>
-                    </div>
-                </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="faq.html">FAQ</a>
+            <a href="services.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+        </div>
 
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>address</h2>
-                        <p>near garden town lahore,<br> block 4</p>
-                        <p>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-snapchat"></i>
-                            <i class="fab fa-whatsapp"></i>
-                        </p>
-                    </div>
-                    <div class="f_box">
-                        <h2>other facilities</h2>
-                        <p>24/7 services</p>
-                        <p>quality control</p>
-                        <p>full cycle medical care</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <button id="topBtn" style="
-   position: fixed; 
-   bottom: 20px; 
-   right: 20px; 
-   padding: 10px 15px; 
-   background-color:#2e6476;
-   color:white;
-   border:none;
-   border-radius:5px;
-   display:none;
-   cursor:pointer;">
-   ↑ Top
-</button>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: support@healify.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
+</footer>
 
-<script src="index.js"></script>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

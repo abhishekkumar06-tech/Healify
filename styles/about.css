@@ -1,0 +1,168 @@
+/* GLOBAL IMPORTS (match index.css styles) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background: #1f1f1f;
+    color: #eaeaea;
+}
+
+/* Theme & Scroll Buttons (same design) */
+#scrollTopBtn, .theme-toggle {
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+.theme-toggle {
+    top: 20px; left: 20px;
+    background: #0a4faf;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+#scrollTopBtn {
+    bottom: 25px; right: 25px;
+    background: #0a4faf;
+    padding: 12px 14px;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    display: none;
+}
+
+/* HEADER */
+.sub-header {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), 
+                url("../images/pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.home-navbar {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area img {
+    width: 55px;
+}
+.logo-area h1 {
+    font-size: 30px;
+    color: #fff;
+}
+.logo-area h1 span {
+    color: #0a92ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+.nav-links a {
+    color: #fff;
+    font-size: 18px;
+}
+.nav-links .active {
+    border-bottom: 2px solid #0a92ff;
+}
+
+.page-title {
+    position: absolute;
+    bottom: 40px;
+    left: 8%;
+    font-size: 40px;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 60px 8%;
+    display: flex;
+    gap: 40px;
+}
+.about-left {
+    width: 50%;
+}
+.about-left h2 {
+    color: #0a4faf;
+    font-size: 32px;
+}
+.about-left p {
+    margin: 15px 0;
+    color: #333;
+}
+.primary-btn {
+    background: #0a4faf;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 6px;
+}
+.about-right img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* MISSION VISION VALUES */
+.mvv-section {
+    padding: 60px 8%;
+}
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    color: #0a4faf;
+    margin-bottom: 40px;
+}
+.mvv-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.mvv-card {
+    width: 32%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.mvv-card h3 {
+    color: #0a4faf;
+}
+
+/* COUNTERS */
+.counter-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 8%;
+}
+.counter-box {
+    width: 30%;
+    text-align: center;
+}
+.counter-box h3 {
+    font-size: 40px;
+    color: #0a4faf;
+}
+
+/* FUN SECTION */
+.fun-section {
+    text-align: center;
+    padding: 60px 8%;
+}
+.secondary-btn {
+    background: #0a4faf;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+

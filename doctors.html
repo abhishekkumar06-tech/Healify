@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healify | Doctors</title>
+
+    <link rel="stylesheet" href="styles/doctors.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<!-- DARK MODE + SCROLL TOP -->
+<div class="theme-toggle" id="themeToggle">🌙</div>
+<button id="scrollTopBtn">↑</button>
+
+<!-- NAVBAR -->
+<header class="sub-header">
+    <nav class="home-navbar">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="">
+            <h1><span>H</span>ealify</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html" class="active">Doctors</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <div class="burger" id="burger">☰</div>
+    </nav>
+
+    <h2 class="page-title fade-in">Meet Our Specialists</h2>
+</header>
+
+<!-- FILTER SECTION -->
+<section class="doctor-filter fade-up">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="cardio">Cardiologists</button>
+    <button class="filter-btn" data-category="neuro">Neurologists</button>
+    <button class="filter-btn" data-category="ortho">Orthopedics</button>
+</section>
+
+<!-- DOCTOR GRID -->
+<section class="doctor-section fade-up">
+
+    <div class="doctor-card" data-category="cardio">
+        <img src="images/doc1.jpg" alt="">
+        <h3>Dr. Arjun Mehra</h3>
+        <p>Cardiologist</p>
+        <button class="detail-btn" data-doctor="1">View Profile</button>
+    </div>
+
+    <div class="doctor-card" data-category="neuro">
+        <img src="images/doc2.jpg" alt="">
+        <h3>Dr. Nisha Verma</h3>
+        <p>Neurologist</p>
+        <button class="detail-btn" data-doctor="2">View Profile</button>
+    </div>
+
+    <div class="doctor-card" data-category="ortho">
+        <img src="images/doc3.jpg" alt="">
+        <h3>Dr. Kabir Sethi</h3>
+        <p>Orthopedic Surgeon</p>
+        <button class="detail-btn" data-doctor="3">View Profile</button>
+    </div>
+
+    <div class="doctor-card" data-category="cardio">
+        <img src="images/doc4.jpg" alt="">
+        <h3>Dr. Sana Malik</h3>
+        <p>Heart Specialist</p>
+        <button class="detail-btn" data-doctor="4">View Profile</button>
+    </div>
+
+</section>
+
+<!-- DOCTOR POPUP MODAL -->
+<div class="doctor-modal" id="doctorModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">×</span>
+
+        <img id="modalImg" src="" alt="">
+        <h2 id="modalName"></h2>
+        <p id="modalSpeciality"></p>
+        <p id="modalBio"></p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="home-footer fade-in">
+    <div class="footer-content">
+        <div>
+            <h3>Healify Hospital</h3>
+            <p>Your trusted healthcare partner.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="faq.html">FAQ</a>
+            <a href="services.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Email: support@healify.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

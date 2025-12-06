@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body.dark-mode{
+    background:#1e1e1e;
+    color:#eee;
+}
+
+/* HEADER */
+.sub-header{
+    height:30vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../images/pic1.jpg");
+    background-size:cover;
+    text-align:center;
+    color:white;
+}
+
+/* FAQ BOX */
+.faq-section{
+    width:80%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.faq-box{
+    background:white;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:8px;
+    box-shadow:rgba(0,0,0,0.1) 0 5px 15px;
+    cursor:pointer;
+}
+
+body.dark-mode .faq-box{
+    background:#333;
+}
+
+.faq-answer{
+    display:none;
+    margin-top:8px;
+    color:#444;
+}
+
+.faq-box.active .faq-answer{
+    display:block;
+}
+
+.faq-question{
+    color:#0a92ff;
+    font-size:20px;
+}
+
+/* FOOTER */
+.home-footer{
+    background:#0a4faf;
+    padding:40px 8%;
+    color:white;
+}
+
+.fade-in{
+    animation:fadeIn 1s forwards;
+    opacity:0;
+}
+@keyframes fadeIn{
+    to{opacity:1;}
+}
+.fade-up{
+    animation:fadeUp .8s forwards;
+    opacity:0;
+}
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(25px);}
+    to{opacity:1; transform:translateY(0);}
+}

@@ -4,104 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healify | About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- SAME NAVBAR -->
-    <section class="background">
-    <nav class="navbar">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-        <h1><span>H</span>ealify</h1>
+<!-- DARK MODE BUTTON -->
+<div class="theme-toggle" id="themeToggle">🌙</div>
 
-        <div class="navbar-items h-class">
-            <ul class="nav v-class">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="course.html">COURSE</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
+<!-- SCROLL TOP BUTTON -->
+<button id="scrollTopBtn">↑</button>
+
+<!-- NAVBAR -->
+<header class="sub-header">
+    <nav class="home-navbar">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="">
+            <h1><span>H</span>ealify</h1>
         </div>
 
-        <div class="burger">&#9776</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="burger" id="burger">☰</div>
     </nav>
+
+    <h2 class="page-title fade-in">About Healify</h2>
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="about-section fade-up">
+    <div class="about-left">
+        <h2>We Care For Your Health</h2>
+        <p>
+            Healify is a modern healthcare institution dedicated to providing 
+            world-class treatment with compassion and trust. Our goal is to make 
+            healthcare accessible, intuitive, and human-centered.
+        </p>
+
+        <p>
+            Our team of experienced doctors, nurses, and health professionals 
+            ensures every patient receives high-quality medical attention based 
+            on global standards.
+        </p>
+
+        <a href="appointment.html" class="primary-btn">Make an Appointment</a>
+    </div>
+
+    <div class="about-right">
+        <img src="images/pic2.jpg" alt="Hospital" />
+    </div>
 </section>
 
+<!-- MISSION-VISION-VALUES -->
+<section class="mvv-section fade-up">
+    <h2 class="section-title">Our Core Principles</h2>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <h1 class="heading">About Us</h1>
-
-        <div class="row row1">
-            <div class="left">
-                <img src="img/about.jpg" alt="">
-            </div>
-
-            <div class="right">
-                <h1>Who We Are</h1>
-                <p>Healify is a modern healthcare platform dedicated to providing medical care with compassion, trust, and advanced treatment facilities.</p>
-
-                <p>Our team of skilled professionals ensures every patient receives personalized medical attention with world-class care standards.</p>
-
-                <button class="btn btn3">Learn More</button>
-            </div>
+    <div class="mvv-cards">
+        <div class="mvv-card">
+            <h3>Our Mission</h3>
+            <p>
+                To deliver high-quality, safe, and patient-centered healthcare 
+                with continuous innovation and care.
+            </p>
         </div>
-    </section>
 
-    <!-- FOOTER (Same as index page) -->
-    <footer>
-            <div class="footer-sec">
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>contact</h2>
-                        <p>email</p>
-                        <p>youtube</p>
-                        <p>facebook</p>
-                        <p>twitter</p>
-                    </div>
-                    <div class="f_box">
-                        <h2>departments</h2>
-                        <p>radiology</p>
-                        <p>pharmocology</p>
-                        <p>pathology</p>
-                        <p>anatomy</p>
-                    </div>
-                </div>
+        <div class="mvv-card">
+            <h3>Our Vision</h3>
+            <p>
+                To become the most trusted healthcare provider through modern 
+                facilities and expert care.
+            </p>
+        </div>
 
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>address</h2>
-                        <p>near garden town lahore,<br> block 4</p>
-                        <p>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-snapchat"></i>
-                            <i class="fab fa-whatsapp"></i>
-                        </p>
-                    </div>
-                    <div class="f_box">
-                        <h2>other facilities</h2>
-                        <p>24/7 services</p>
-                        <p>quality control</p>
-                        <p>full cycle medical care</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <button id="topBtn" style="
-   position: fixed; 
-   bottom: 20px; 
-   right: 20px; 
-   padding: 10px 15px; 
-   background-color:#2e6476;
-   color:white;
-   border:none;
-   border-radius:5px;
-   display:none;
-   cursor:pointer;">
-   ↑ Top
-</button>
+        <div class="mvv-card">
+            <h3>Our Values</h3>
+            <p>
+                Compassion, respect, quality, empathy, and a commitment to 
+                excellence in every service.
+            </p>
+        </div>
+    </div>
+</section>
 
-<script src="index.js"></script>
+<!-- COUNTER SECTION -->
+<section class="counter-section fade-up">
+    <div class="counter-box">
+        <h3 id="patientsCount">0</h3>
+        <p>Happy Patients</p>
+    </div>
+    <div class="counter-box">
+        <h3 id="doctorsCount">0</h3>
+        <p>Qualified Doctors</p>
+    </div>
+    <div class="counter-box">
+        <h3 id="experienceCount">0</h3>
+        <p>Years of Experience</p>
+    </div>
+</section>
+
+<!-- FUN FACT -->
+<section class="fun-section fade-up">
+    <h2 class="section-title">Fun Medical Fact</h2>
+    <p id="funFact">Click the button to see a fun fact!</p>
+    <button class="secondary-btn" id="funFactBtn">Generate Fact</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="home-footer fade-in">
+    <div class="footer-content">
+        <div>
+            <h3>Healify Hospital</h3>
+            <p>Your trusted healthcare partner.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="services.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Email: support@healify.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body.dark-mode{
+    background:#1f1f1f;
+    color:white;
+}
+
+.sub-header{
+    height:30vh;
+    background:url("../images/pic1.jpg") center/cover;
+    text-align:center;
+    color:white;
+    padding-top:40px;
+}
+
+.appointment-section{
+    width:70%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.appoint-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:rgba(0,0,0,0.2) 0 5px 15px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+body.dark-mode .appoint-box{
+    background:#333;
+}
+
+.appoint-box input, select{
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #aaa;
+}
+
+#bookNow{
+    padding:12px;
+    background:#0a92ff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.fade-up{
+    opacity:0;
+    animation:fadeUp 0.9s forwards;
+}
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.fade-in{
+    opacity:0;
+    animation:fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+    to{opacity:1;}
+}

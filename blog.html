@@ -4,105 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healify | Blog</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <section class="background">
-    <nav class="navbar">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-        <h1><span>H</span>ealify</h1>
+<!-- THEME + SCROLL BUTTON -->
+<div class="theme-toggle" id="themeToggle">🌙</div>
+<button id="scrollTopBtn">↑</button>
 
-        <div class="navbar-items h-class">
-            <ul class="nav v-class">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="course.html">COURSE</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
+<!-- NAVBAR -->
+<header class="sub-header">
+    <nav class="home-navbar">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="">
+            <h1><span>H</span>ealify</h1>
         </div>
 
-        <div class="burger">&#9776</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+
+        <div class="burger" id="burger">☰</div>
     </nav>
+
+    <h2 class="page-title fade-in">Latest Blogs</h2>
+</header>
+
+<!-- BLOG CATEGORY FILTER -->
+<section class="blog-filter fade-up">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="health">Health</button>
+    <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+    <button class="filter-btn" data-category="tips">Tips</button>
 </section>
 
+<!-- BLOG LIST -->
+<section class="blog-section fade-up">
 
-    <!-- BLOG SECTION -->
-    <section class="blog-section">
-        <h1 class="heading">Latest Blogs</h1>
+    <div class="blog-card" data-category="health">
+        <img src="images/pic2.jpg" alt="">
+        <h3>Healthy Lifestyle Tips</h3>
+        <p>Learn how to maintain your health even with a busy schedule.</p>
+        <button class="primary-btn">Read More</button>
+    </div>
 
-        <div class="blog-row">
-            <div class="blog-card">
-                <h2>Healthy Lifestyle Tips</h2>
-                <p>Learn the best ways to maintain your health in a busy schedule.</p>
-            </div>
+    <div class="blog-card" data-category="tips">
+        <img src="images/about.jpg" alt="">
+        <h3>Why Checkups Matter</h3>
+        <p>Understanding the importance of regular medical examinations.</p>
+        <button class="primary-btn">Read More</button>
+    </div>
 
-            <div class="blog-card">
-                <h2>Why Checkups Matter</h2>
-                <p>Understanding the importance of regular medical examinations.</p>
-            </div>
+    <div class="blog-card" data-category="lifestyle">
+        <img src="images/pic1.jpg" alt="">
+        <h3>Mental Health Awareness</h3>
+        <p>Balancing your mind and body for complete well-being.</p>
+        <button class="primary-btn">Read More</button>
+    </div>
 
-            <div class="blog-card">
-                <h2>Mental Health Awareness</h2>
-                <p>Balancing your mind and body for complete well-being.</p>
-            </div>
+    <div class="blog-card" data-category="health">
+        <img src="images/pic2.jpg" alt="">
+        <h3>Improve Your Immunity</h3>
+        <p>Boosting your immune system with natural practices.</p>
+        <button class="primary-btn">Read More</button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="home-footer fade-in">
+    <div class="footer-content">
+        <div>
+            <h3>Healify Hospital</h3>
+            <p>Your trusted healthcare partner.</p>
         </div>
-    </section>
 
-    <footer>
-            <div class="footer-sec">
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>contact</h2>
-                        <p>email</p>
-                        <p>youtube</p>
-                        <p>facebook</p>
-                        <p>twitter</p>
-                    </div>
-                    <div class="f_box">
-                        <h2>departments</h2>
-                        <p>radiology</p>
-                        <p>pharmocology</p>
-                        <p>pathology</p>
-                        <p>anatomy</p>
-                    </div>
-                </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="faq.html">FAQ</a>
+            <a href="services.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+        </div>
 
-                <div class="sec">
-                    <div class="f_box">
-                        <h2>address</h2>
-                        <p>near garden town lahore,<br> block 4</p>
-                        <p>
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-snapchat"></i>
-                            <i class="fab fa-whatsapp"></i>
-                        </p>
-                    </div>
-                    <div class="f_box">
-                        <h2>other facilities</h2>
-                        <p>24/7 services</p>
-                        <p>quality control</p>
-                        <p>full cycle medical care</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <button id="topBtn" style="
-   position: fixed; 
-   bottom: 20px; 
-   right: 20px; 
-   padding: 10px 15px; 
-   background-color:#2e6476;
-   color:white;
-   border:none;
-   border-radius:5px;
-   display:none;
-   cursor:pointer;">
-   ↑ Top
-</button>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: support@healify.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
+</footer>
 
-<script src="index.js"></script>
-</body>
-</html>
+<script src="js/script.js"></script>
+<script src="h
