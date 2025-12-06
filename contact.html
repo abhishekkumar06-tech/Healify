@@ -1,76 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Healify — Contact</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9a6b6f3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healify | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container navbar">
-      <a href="index.html" class="logo-link">
-        <img src="img/logo.png" alt="Healify">
+
+    <!-- NAVBAR -->
+    <section class="background">
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
         <h1><span>H</span>ealify</h1>
-      </a>
 
-      <nav class="nav-items">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="course.html">COURSE</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-        </ul>
-      </nav>
-
-      <div style="display:flex;align-items:center;gap:12px">
-        <a class="cta" href="contact.html">Book</a>
-        <div class="burger">&#9776;</div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="container section">
-      <h2 class="heading">Get in touch</h2>
-      <div class="contact-grid">
-        <div class="form-card">
-          <form action="#" method="post">
-            <input type="text" name="name" placeholder="Full name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <input type="tel" name="phone" placeholder="Phone">
-            <textarea name="message" placeholder="How can we help?" rows="6"></textarea>
-            <button class="btn" type="submit">Send Message</button>
-          </form>
+        <div class="navbar-items h-class">
+            <ul class="nav v-class">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
         </div>
 
-        <div class="form-card contact-info">
-          <h3 class="meta">Contact Info</h3>
-          <p style="margin:10px 0">Email: <strong>healify@gmail.com</strong></p>
-          <p style="margin:10px 0">Phone: <strong>+92 300 1234567</strong></p>
-          <p style="margin:10px 0">Address: Near Garden Town, Lahore</p>
+        <div class="burger">&#9776</div>
+    </nav>
+</section>
 
-          <div style="margin-top:16px">
-            <iframe src="" style="width:100%; height:200px; border-radius:8px; border:0; background:#071012">Map</iframe>
-          </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <h1 class="heading">Contact Us</h1>
+
+        <div class="contact-row">
+            
+            <div class="contact-card">
+                <h2>Get in touch</h2>
+                <input type="text" placeholder="Your name">
+                <input type="email" placeholder="Your email">
+                <input type="text" placeholder="Your phone">
+                <textarea placeholder="Your message"></textarea>
+                <button class="btn btn3" id="sendMsg">Send Message</button>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Details</h2>
+                <p><b>Email:</b> healify@gmail.com</p>
+                <p><b>Phone:</b> +92 300 1234567</p>
+                <p><b>Address:</b> Garden Town, Lahore</p>
+                <iframe src="" class="map">Google Map</iframe>
+            </div>
+
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div><h4>Contact</h4><p>healify@gmail.com</p></div>
-        <div><h4>Address</h4><p>Near Garden Town, Lahore</p></div>
-        <div><h4>Hours</h4><p>Mon - Sun • 24/7</p></div>
-      </div>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+            <div class="footer-sec">
+                <div class="sec">
+                    <div class="f_box">
+                        <h2>contact</h2>
+                        <p>email</p>
+                        <p>youtube</p>
+                        <p>facebook</p>
+                        <p>twitter</p>
+                    </div>
+                    <div class="f_box">
+                        <h2>departments</h2>
+                        <p>radiology</p>
+                        <p>pharmocology</p>
+                        <p>pathology</p>
+                        <p>anatomy</p>
+                    </div>
+                </div>
 
-  <script src="index.js"></script>
+                <div class="sec">
+                    <div class="f_box">
+                        <h2>address</h2>
+                        <p>near garden town lahore,<br> block 4</p>
+                        <p>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-snapchat"></i>
+                            <i class="fab fa-whatsapp"></i>
+                        </p>
+                    </div>
+                    <div class="f_box">
+                        <h2>other facilities</h2>
+                        <p>24/7 services</p>
+                        <p>quality control</p>
+                        <p>full cycle medical care</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button id="topBtn" style="
+   position: fixed; 
+   bottom: 20px; 
+   right: 20px; 
+   padding: 10px 15px; 
+   background-color:#2e6476;
+   color:white;
+   border:none;
+   border-radius:5px;
+   display:none;
+   cursor:pointer;">
+   ↑ Top
+</button>
+
+
+<script src="index.js"></script>
 </body>
 </html>
