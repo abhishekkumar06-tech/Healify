@@ -1,6 +1,6 @@
-// ----------------------
+
 // NAVBAR BURGER MENU
-// ----------------------
+
 const burger = document.getElementById("burger");
 const navLinks = document.querySelector(".nav-links");
 
@@ -12,9 +12,9 @@ if (burger) {
 
 
 
-// ----------------------
+
 // DARK MODE TOGGLE
-// ----------------------
+
 const themeToggle = document.getElementById("themeToggle");
 
 if (themeToggle) {
@@ -32,9 +32,9 @@ if (themeToggle) {
 
 
 
-// ----------------------
+
 // SCROLL TO TOP BUTTON
-// ----------------------
+
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -56,9 +56,9 @@ if (scrollTopBtn) {
 
 
 
-// ----------------------
+
 // SHOW WELCOME ALERT ONLY ON HOME PAGE
-// ----------------------
+
 if (window.location.pathname.includes("index.html") || window.location.pathname.endsWith("/")) {
     window.addEventListener("load", () => {
         alert("Welcome to Healify! Your trusted healthcare partner.");
@@ -67,9 +67,9 @@ if (window.location.pathname.includes("index.html") || window.location.pathname.
 
 
 
-// ----------------------
+
 // FAQ ACCORDION
-// ----------------------
+
 const faqBoxes = document.querySelectorAll(".faq-box");
 
 faqBoxes.forEach((box) => {
@@ -80,9 +80,9 @@ faqBoxes.forEach((box) => {
 
 
 
-// ----------------------
+
 // DOCTORS PAGE → CATEGORY FILTER
-// ----------------------
+
 const filterBtns = document.querySelectorAll(".filter-btn");
 const doctorCards = document.querySelectorAll(".doctor-card");
 
@@ -106,9 +106,9 @@ filterBtns.forEach((btn) => {
 
 
 
-// ----------------------
+
 // TESTIMONIAL SLIDER
-// ----------------------
+
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 const testimonialBox = document.getElementById("testimonialBox");
@@ -147,9 +147,9 @@ if (testimonialBox) {
 
 
 
-// ----------------------
+
 // APPOINTMENT PAGE → FORM VALIDATION
-// ----------------------
+
 const appointForm = document.getElementById("appointForm");
 const bookNow = document.getElementById("bookNow");
 
@@ -179,9 +179,9 @@ if (bookNow) {
 
 
 
-// ----------------------
+
 // CONTACT FORM MESSAGE (from old code)
-// ----------------------
+
 const sendMsg = document.getElementById("sendMsg");
 
 if (sendMsg) {
